@@ -1,11 +1,86 @@
 \usepackage[acronym]{glossaries}
 \makeglossaries
 
+%begin acronyms to standarize
+\newacronym{ngran}{NG-RAN}{Next Generation RAN}
+\newacronym{oran}{O-RAN}{Open RAN}
+\newacronym{cu}{CU}{Central Unit}
+\newacronym{du}{DU}{Distributed Unit}
+\newacronym{ru}{RU}{Radio Unit}
+\newacronym{vngran}{vNG-RAN}{virtualized NG-RAN}
+\newacronym{cr}{CR}{computing resources}
+\newacronym{rrc}{RRC}{Radio Resource Control}
+\newacronym{pdcp}{PDCP}{Packet Data Convergence Protocol}
+\newacronym{rlc}{RLC}{Radio Link Control}
+\newacronym{phy}{PHY}{Physical Layer}
+\newacronym{rf}{RF}{Radio Frequency}
+\newacronym{drc}{DRC}{Disaggregated RAN Combination}
+\newacronym{vcu}{vCU}{virtualized Central Unit}
+\newacronym{vdu}{vDU}{virtualized Distributed Unit}
+\newacronym{vnf}{VNF}{virtual network functions}
+\newacronym{sfc}{SFC}{service function chain}
+\newacronym{cots}{COTS}{Commercial off-the-shelf}
+\newacronym{tco}{TCO}{Total cost of ownership}
+%end
+
+\newacronym{devops}{DevOps}{development and operations}
+
 \newacronym{general_purpose_processor}{GPP}{general purpose processor}
 \newacronym{graph_neural_network}{GNN}{graph neural network}
+
+\newacronym{management_and_network_orchestration}{MANO}{management and network orchestration}
+\newacronym{medium_access_contorl}{MAC}{medium access control}
 \newacronym{message_passing_graph_neural_network}{MPGNN}{Message-Passing Graph Neural Network}
+
 \newacronym{near_real_time_ran_intelligent_controller}{nRT-RIC}{near real-time RAN intelligent controller}
 \newacronym{network_function_virtualization}{NFV}{network function virtualization}
+\newacronym{network_function_virtualization_infrastructure}{NFVI}{\acrlong{network_function_virtualization} infrastructure}
+\newacronym{network_function_virtualization_orchestrator}{NFVO}{\acrlong{network_function_virtualization} orchestrator}
+\newacronym{network_service_orchestrator}{NSO}{network service orchestrator}
 \newacronym{non_real_time_ran_intelligent_controller}{non-RT-RIC}{non real-time RAN intelligent controller}
-\newacronym{ran_intelligent_controller}{RIC}{RAN intelligent controller}
+
+\newacronym{open_air_interface}{OAI}{OpenAirInterface}
+
+\newacronym{radio_access_network}{RAN}{radio access network}
+\newacronym{ran_intelligent_controller}{RIC}{\acrshort{radio_access_network} intelligent controller}
+\newacronym{resource_orchestrator}{RO}{Resource Orchestrator}
 \newacronym{ric_messaging_router}{RMR}{RIC messaging router}
+
+\newacronym{virtualized_infrastructure_manager}{VIM}{virtualized infrastructure manager}
+\newacronym{virtualized_network_functions_manager}{VNFM}{\acrlong{vnf} manager}
+\newacronym{virtualized_ran}{vRAN}{virtualized \acrlong{radio_access_network}}
+\newacronym{virtualized_radio_unit}{vRU}{virtualized radio unit}
+
+
+%Glossary
+\newglossaryentry{network_function_virtualization_gls}{
+    name={Network Function Virtualization},
+    description={The replacement of network appliance hardware with virtual machines}}
+    
+\newglossaryentry{application_plane}{
+    name={application plane},
+    description={The collection of applications and services that program network behavior}}
+    
+\newglossaryentry{control_plane}{
+    name={control plane},
+    description={The collection of functions responsible for controlling one or more network devices. The CP instructs network devices with respect to how to process and forward packets. The control plane interacts primarily with the forwarding plane and, to a lesser extent, with the operational plane.}}
+    
+\newglossaryentry{forwarding_plane}{
+    name={forwarding plane},
+    description={The collection of resources across all network devices responsible for forwarding traffic.}}
+    
+\newglossaryentry{management_plane}{
+    name={management plane},
+    description={The collection of functions responsible for monitoring, configuring, and maintaining one or more network devices or parts of network devices. The management plane is mostly related to the operational plane (it is related less to the forwarding plane)}}
+    
+\newglossaryentry{nfv_infrastructure}{
+    name={\acrshort{network_function_virtualization} infrastructure},
+    description={Totality of all hardware and software components that build up the environment in which VNFs are deployed}}
+    
+\newglossaryentry{nfv_mano}{
+    name={\acrshort{network_function_virtualization} management and orchestration},
+    description={Functions collectively provided by NFVO, VNFM, and VIM}}
+    
+\newglossaryentry{nfv_orchestrator}{
+    name={\acrshort{network_function_virtualization} orchestrator},
+    description={Functional block that manages the Network Service (NS) life cycle and coordinates the management of NS life cycle, VNF life cycle (supported by the VNFM) and NFVI resources (supported by the VIM) to ensure an optimized allocation of the necessary resources and connectivity}}
