@@ -1,4 +1,7 @@
-\usepackage[acronym]{glossaries}
+% glossaries can be configured by defining the \glsopts command before including it.
+% \newcommand{\glsopts}{acronyms,nolist,<other options>}
+\providecommand{\glsopts}{acronyms,nolist}
+\usepackage[\glsopts]{glossaries}
 \makeglossaries
 
 \newacronym{central_unit}{CU}{Central Unit}
