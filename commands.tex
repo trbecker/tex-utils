@@ -1,0 +1,20 @@
+% my common latex commands
+
+% Readable math
+\newcommand{\union}{\cup}
+\newcommand{\intersection}{\cap}
+
+% Coloring
+\usepackage{color}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}} % proposed
+\newcommand{\red}[1]{\textcolor{red}{#1}} % to be removed
+\newcommand{\green}[1]{\textcolor{green}{#1}} % to be discussed?
+\newcommand{\yellow}[1]{\textcolor{yellow}{#1}} % ????
+\newcommand{\magenta}[1]{\textcolor{magenta}{#1}} %
+
+% Document commenting, outlining and so on
+\usepackage{cancel}
+\newcommand{\proposed}[1]{\textit{\blue{#1}}}
+\newcommand{\remove}[1]{\cancel{\red{#1}}}
+\newcommand{\discussion}[1]{\textit{\green{#1}}}
+\newcommand{\huh}[1]{\textit{\textit{\yellow{#1}}}
